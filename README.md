@@ -4,6 +4,13 @@ Three independent studies of demand, campaign response, and customer spending. E
 
 **[Explore the portfolio](https://governorkaputula.github.io/data-science-portfolio/)**
 
+
+## Flagship energy study
+
+**[Zambia Solar Resource Observatory](https://github.com/GovernorKaputula/zambia-solar-resource)** adds an engineering-focused investigation: twelve years of NASA POWER data, six locations, a resource explorer, and a chronological forecast benchmark. [Open the application](https://governorkaputula.github.io/zambia-solar-resource/).
+
+[![Check portfolio](https://github.com/GovernorKaputula/data-science-portfolio/actions/workflows/check.yml/badge.svg)](https://github.com/GovernorKaputula/data-science-portfolio/actions/workflows/check.yml)
+
 ## Selected work
 
 | Study | Method | Verified finding | Read |
@@ -58,7 +65,7 @@ The tests check demand MAE, campaign budget metrics, and segment profile summari
 
 ## Website and GitHub profile
 
-`dist/` can be served by any static host. Run `python build.py --github-pages` to build into `docs/` for GitHub Pages (main branch, `/docs` folder). The included GitHub Actions workflow is manual: it runs the analyses and checks on request. `profile-README.md` is a companion profile draft.
+`dist/` can be served by any static host. Run `python build.py --github-pages` to build into `docs/` for GitHub Pages (main branch, `/docs` folder). GitHub Actions automatically checks saved results, SQL audits, the website build, and local links on pushes and pull requests. The separate manual reproduction workflow reruns the source analyses. `profile-README.md` mirrors the published profile introduction.
 
 ## Data attribution
 
