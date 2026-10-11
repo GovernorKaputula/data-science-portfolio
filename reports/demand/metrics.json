@@ -1,0 +1,786 @@
+{
+  "rows": 17379,
+  "train_rows": 13003,
+  "validation_rows": 2208,
+  "test_rows": 2168,
+  "selected_model": "boosting_63",
+  "features": [
+    "season",
+    "yr",
+    "mnth",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed"
+  ],
+  "validation": {
+    "seasonal_baseline": {
+      "mae": 55.570411208658484,
+      "rmse": 85.3888026283237,
+      "r2": 0.8634205234134494
+    },
+    "ridge": {
+      "mae": 112.00869360040026,
+      "rmse": 146.83975506351476,
+      "r2": 0.596102746931344
+    },
+    "boosting_15": {
+      "mae": 42.99853829710043,
+      "rmse": 62.89547907785749,
+      "r2": 0.9258992752386958
+    },
+    "boosting_31": {
+      "mae": 40.60165735870301,
+      "rmse": 60.955675374108075,
+      "r2": 0.9303995749720017
+    },
+    "boosting_63": {
+      "mae": 40.39512284608451,
+      "rmse": 62.39864018142833,
+      "r2": 0.9270653593365307
+    }
+  },
+  "test": {
+    "mae": 42.259254276994874,
+    "rmse": 67.36447664626058,
+    "r2": 0.8883287712771097
+  },
+  "baseline": {
+    "mae": 89.89552878701865,
+    "rmse": 143.82762380297063,
+    "r2": 0.49094579944638317
+  },
+  "mae_reduction_pct": 52.990705047059784,
+  "reduction_bootstrap_95_pct": [
+    47.85961747934157,
+    57.45665107819809
+  ],
+  "bootstrap_unit": "observed calendar day; 2000 paired resamples",
+  "test_start": "2012-10-01",
+  "test_end": "2012-12-31",
+  "monthly": [
+    {
+      "month": "2012-10",
+      "mae": 40.10899540410114,
+      "baseline_mae": 55.61182637983486,
+      "hours": 708
+    },
+    {
+      "month": "2012-11",
+      "mae": 40.58214475494393,
+      "baseline_mae": 88.59222555531747,
+      "hours": 718
+    },
+    {
+      "month": "2012-12",
+      "mae": 45.933847159530366,
+      "baseline_mae": 123.86942774206926,
+      "hours": 742
+    }
+  ],
+  "hourly_profile": [
+    {
+      "hr": 0,
+      "cnt": 60.09,
+      "prediction": 61.84,
+      "baseline": 86.69
+    },
+    {
+      "hr": 1,
+      "cnt": 39.41,
+      "prediction": 36.2,
+      "baseline": 51.28
+    },
+    {
+      "hr": 2,
+      "cnt": 24.27,
+      "prediction": 24.92,
+      "baseline": 35.39
+    },
+    {
+      "hr": 3,
+      "cnt": 11.71,
+      "prediction": 14.77,
+      "baseline": 18.03
+    },
+    {
+      "hr": 4,
+      "cnt": 7.93,
+      "prediction": 10.0,
+      "baseline": 9.59
+    },
+    {
+      "hr": 5,
+      "cnt": 25.88,
+      "prediction": 29.64,
+      "baseline": 32.78
+    },
+    {
+      "hr": 6,
+      "cnt": 89.57,
+      "prediction": 100.95,
+      "baseline": 120.33
+    },
+    {
+      "hr": 7,
+      "cnt": 254.76,
+      "prediction": 249.64,
+      "baseline": 334.88
+    },
+    {
+      "hr": 8,
+      "cnt": 454.63,
+      "prediction": 429.78,
+      "baseline": 526.42
+    },
+    {
+      "hr": 9,
+      "cnt": 270.36,
+      "prediction": 266.54,
+      "baseline": 319.8
+    },
+    {
+      "hr": 10,
+      "cnt": 204.88,
+      "prediction": 219.48,
+      "baseline": 269.44
+    },
+    {
+      "hr": 11,
+      "cnt": 251.0,
+      "prediction": 259.34,
+      "baseline": 318.16
+    },
+    {
+      "hr": 12,
+      "cnt": 314.71,
+      "prediction": 312.42,
+      "baseline": 379.84
+    },
+    {
+      "hr": 13,
+      "cnt": 310.7,
+      "prediction": 316.59,
+      "baseline": 372.19
+    },
+    {
+      "hr": 14,
+      "cnt": 297.1,
+      "prediction": 309.09,
+      "baseline": 351.38
+    },
+    {
+      "hr": 15,
+      "cnt": 318.04,
+      "prediction": 318.81,
+      "baseline": 362.72
+    },
+    {
+      "hr": 16,
+      "cnt": 386.87,
+      "prediction": 372.49,
+      "baseline": 464.74
+    },
+    {
+      "hr": 17,
+      "cnt": 525.57,
+      "prediction": 511.46,
+      "baseline": 711.35
+    },
+    {
+      "hr": 18,
+      "cnt": 455.85,
+      "prediction": 462.84,
+      "baseline": 668.95
+    },
+    {
+      "hr": 19,
+      "cnt": 317.36,
+      "prediction": 344.97,
+      "baseline": 505.44
+    },
+    {
+      "hr": 20,
+      "cnt": 226.85,
+      "prediction": 224.32,
+      "baseline": 370.7
+    },
+    {
+      "hr": 21,
+      "cnt": 170.91,
+      "prediction": 172.8,
+      "baseline": 278.91
+    },
+    {
+      "hr": 22,
+      "cnt": 131.16,
+      "prediction": 132.47,
+      "baseline": 210.65
+    },
+    {
+      "hr": 23,
+      "cnt": 94.46,
+      "prediction": 94.25,
+      "baseline": 143.59
+    }
+  ],
+  "daily_totals": [
+    {
+      "date": "2012-10-01",
+      "actual": 6778,
+      "prediction": 6171,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-10-02",
+      "actual": 4639,
+      "prediction": 3366,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-10-03",
+      "actual": 7572,
+      "prediction": 7291,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-10-04",
+      "actual": 7328,
+      "prediction": 7418,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-10-05",
+      "actual": 8156,
+      "prediction": 7861,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-10-06",
+      "actual": 7965,
+      "prediction": 7773,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-10-07",
+      "actual": 3510,
+      "prediction": 4128,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-10-08",
+      "actual": 5478,
+      "prediction": 4719,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-10-09",
+      "actual": 6392,
+      "prediction": 6114,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-10-10",
+      "actual": 7691,
+      "prediction": 7136,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-10-11",
+      "actual": 7570,
+      "prediction": 6674,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-10-12",
+      "actual": 7282,
+      "prediction": 6867,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-10-13",
+      "actual": 7109,
+      "prediction": 6747,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-10-14",
+      "actual": 6639,
+      "prediction": 7311,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-10-15",
+      "actual": 5875,
+      "prediction": 5785,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-10-16",
+      "actual": 7534,
+      "prediction": 6919,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-10-17",
+      "actual": 7461,
+      "prediction": 6522,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-10-18",
+      "actual": 7509,
+      "prediction": 6761,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-10-19",
+      "actual": 5424,
+      "prediction": 6101,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-10-20",
+      "actual": 8090,
+      "prediction": 7947,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-10-21",
+      "actual": 6824,
+      "prediction": 7222,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-10-22",
+      "actual": 7058,
+      "prediction": 6904,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-10-23",
+      "actual": 7466,
+      "prediction": 7292,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-10-24",
+      "actual": 7693,
+      "prediction": 7553,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-10-25",
+      "actual": 7359,
+      "prediction": 6168,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-10-26",
+      "actual": 7444,
+      "prediction": 6421,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-10-27",
+      "actual": 7852,
+      "prediction": 7596,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-10-28",
+      "actual": 4459,
+      "prediction": 4568,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-10-29",
+      "actual": 22,
+      "prediction": 46,
+      "baseline": 48
+    },
+    {
+      "date": "2012-10-30",
+      "actual": 1096,
+      "prediction": 1931,
+      "baseline": 4359
+    },
+    {
+      "date": "2012-10-31",
+      "actual": 5566,
+      "prediction": 5584,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-11-01",
+      "actual": 5986,
+      "prediction": 4952,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-11-02",
+      "actual": 5847,
+      "prediction": 5644,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-11-03",
+      "actual": 5138,
+      "prediction": 4718,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-11-04",
+      "actual": 5107,
+      "prediction": 4747,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-11-05",
+      "actual": 5259,
+      "prediction": 4887,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-11-06",
+      "actual": 5686,
+      "prediction": 5012,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-11-07",
+      "actual": 5035,
+      "prediction": 4584,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-11-08",
+      "actual": 5315,
+      "prediction": 5737,
+      "baseline": 7215
+    },
+    {
+      "date": "2012-11-09",
+      "actual": 5992,
+      "prediction": 6027,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-11-10",
+      "actual": 6536,
+      "prediction": 6529,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-11-11",
+      "actual": 6852,
+      "prediction": 6255,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-11-12",
+      "actual": 6269,
+      "prediction": 6018,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-11-13",
+      "actual": 4094,
+      "prediction": 4457,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-11-14",
+      "actual": 5495,
+      "prediction": 5179,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-11-15",
+      "actual": 5445,
+      "prediction": 5085,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-11-16",
+      "actual": 5698,
+      "prediction": 5671,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-11-17",
+      "actual": 5629,
+      "prediction": 5663,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-11-18",
+      "actual": 4669,
+      "prediction": 4390,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-11-19",
+      "actual": 5499,
+      "prediction": 5300,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-11-20",
+      "actual": 5634,
+      "prediction": 5399,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-11-21",
+      "actual": 5146,
+      "prediction": 5929,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-11-22",
+      "actual": 2425,
+      "prediction": 4983,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-11-23",
+      "actual": 3910,
+      "prediction": 6052,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-11-24",
+      "actual": 2277,
+      "prediction": 3998,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-11-25",
+      "actual": 2424,
+      "prediction": 3304,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-11-26",
+      "actual": 5087,
+      "prediction": 5425,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-11-27",
+      "actual": 3959,
+      "prediction": 3485,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-11-28",
+      "actual": 5260,
+      "prediction": 5192,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-11-29",
+      "actual": 5323,
+      "prediction": 5105,
+      "baseline": 7215
+    },
+    {
+      "date": "2012-11-30",
+      "actual": 5668,
+      "prediction": 5098,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-12-01",
+      "actual": 5191,
+      "prediction": 3889,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-12-02",
+      "actual": 4649,
+      "prediction": 4125,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-12-03",
+      "actual": 6234,
+      "prediction": 6082,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-12-04",
+      "actual": 6606,
+      "prediction": 6540,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-12-05",
+      "actual": 5729,
+      "prediction": 5923,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-12-06",
+      "actual": 5375,
+      "prediction": 4833,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-12-07",
+      "actual": 5008,
+      "prediction": 4539,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-12-08",
+      "actual": 5582,
+      "prediction": 4277,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-12-09",
+      "actual": 3228,
+      "prediction": 2650,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-12-10",
+      "actual": 5170,
+      "prediction": 4353,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-12-11",
+      "actual": 5501,
+      "prediction": 5002,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-12-12",
+      "actual": 5319,
+      "prediction": 4865,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-12-13",
+      "actual": 5532,
+      "prediction": 5201,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-12-14",
+      "actual": 5611,
+      "prediction": 5254,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-12-15",
+      "actual": 5047,
+      "prediction": 5263,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-12-16",
+      "actual": 3786,
+      "prediction": 3559,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-12-17",
+      "actual": 4585,
+      "prediction": 3810,
+      "baseline": 6890
+    },
+    {
+      "date": "2012-12-18",
+      "actual": 5557,
+      "prediction": 5723,
+      "baseline": 6838
+    },
+    {
+      "date": "2012-12-19",
+      "actual": 5267,
+      "prediction": 5551,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-12-20",
+      "actual": 4128,
+      "prediction": 4591,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-12-21",
+      "actual": 3623,
+      "prediction": 4020,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-12-22",
+      "actual": 1749,
+      "prediction": 3249,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-12-23",
+      "actual": 1787,
+      "prediction": 3116,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-12-24",
+      "actual": 920,
+      "prediction": 2907,
+      "baseline": 6881
+    },
+    {
+      "date": "2012-12-25",
+      "actual": 1013,
+      "prediction": 3613,
+      "baseline": 6833
+    },
+    {
+      "date": "2012-12-26",
+      "actual": 441,
+      "prediction": 2518,
+      "baseline": 7415
+    },
+    {
+      "date": "2012-12-27",
+      "actual": 2114,
+      "prediction": 3892,
+      "baseline": 7222
+    },
+    {
+      "date": "2012-12-28",
+      "actual": 3095,
+      "prediction": 3960,
+      "baseline": 7124
+    },
+    {
+      "date": "2012-12-29",
+      "actual": 1341,
+      "prediction": 2546,
+      "baseline": 6752
+    },
+    {
+      "date": "2012-12-30",
+      "actual": 1796,
+      "prediction": 2945,
+      "baseline": 6361
+    },
+    {
+      "date": "2012-12-31",
+      "actual": 2729,
+      "prediction": 3561,
+      "baseline": 6890
+    }
+  ]
+}

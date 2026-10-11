@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/raw/
+tmp/
+*.zip
+!dist/downloads/portfolio-source.zip
+!docs/downloads/portfolio-source.zip
+.DS_Store
+

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.zip binary
+docs/** linguist-generated=true
+dist/** linguist-generated=true
+reports/**/*.csv linguist-generated=true
+reports/**/*.json linguist-generated=true
+reports/**/*.svg linguist-generated=true
