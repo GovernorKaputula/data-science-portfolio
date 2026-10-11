@@ -54,7 +54,7 @@ dist/               Deployable website
 - **Campaign:** Exclude call duration and final contact count. Preserve row chronology. Evaluate ranking and calibration separately. Do not equate retrospective lift with incremental conversions.
 - **Segmentation:** Exclude channel and region from clustering. Refit preprocessing within each bootstrap. Report overlap as well as stability. Do not label resampling agreement as predictive accuracy.
 
-All headline results are recomputed from row-level outputs in the test suite. SQL independently checks monthly demand error, ranks campaign deciles, and describes customer channel mix.
+The tests check demand MAE, campaign budget metrics, and segment profile summaries against row-level outputs. SQL independently checks monthly demand error, ranks campaign deciles, and describes customer channel mix.
 
 ## Website and GitHub profile
 
